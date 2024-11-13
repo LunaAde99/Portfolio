@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon (1).ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, {
+                indicators: true
+            });
+            setInterval(function () {
+                var instance = M.Carousel.getInstance(elems[0]);
+                instance.next();
+            }, 3000); // Cambia immagine ogni 3 secondi
+        });
+    </script>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="nav-wrapper teal lighten-3">
+                <a href="#" class="brand-logo"><i class="material-icons">perm_identity</i>Adelina Gabriela Baba</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ30F8g8vYd6Jy-Lqa6xhcEZ9o2qtDxn7lgX_xfV7DR9DB4vuK3WlT5UfJp2g8DtLtPPsXxLIKKm"
+                            target="_blank" class="waves-effect waves-light btn teal lighten-1">Prenota appuntamento<i
+                                class="material-icons right">video_call</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="teal lighten-4">
+            <div class="row">
+                <div class="card col s6">
+                    <div class="card-image waves-effect waves-block waves-light"
+                        style="display: flex; justify-content: center;">
+                        <img class="activator" src="Adelina.jpg" style="width:500px;height:500px;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">About me<i
+                                class="material-icons right">more_vert</i></span>
+                        </p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4"><i
+                                class="material-icons right">close</i></span>
+                        <p><a href="Chi sono.html" target="_blank">Chi sono?</a>
+                        <p><a href="CV Baba Adelina.pdf" target="_blank">Leggi il CV</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card col s6">
+                        <div class="card-image waves-effect waves-block waves-light"
+                            style="display: flex; justify-content: center;">
+                            <img class="activator" src="LunaAde.jpg" style="width:500px;height:500px;">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Progetti<i
+                                    class="material-icons right">more_vert</i></span>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4"><i
+                                    class="material-icons right">close</i></span>
+                            <p><a href="Progetti.html" target="_blank">Scopri i miei progetti</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel teal teal lighten-4">
+                <a class="carousel-item" href="Agenzia.html"><img
+                        src="https://kinsta.com/wp-content/uploads/2021/11/Untitled-54.png">
+                    <p>Progetto 1</p>
+                </a>
+                <a class="carousel-item" href="Album Bts.html"><img
+                        src="https://kinsta.com/wp-content/uploads/2021/11/Untitled-54.png">
+                    <p>Progetto 2</p>
+                </a>
+                <a class="carousel-item" href="es.html"><img
+                        src="https://kinsta.com/wp-content/uploads/2021/11/Untitled-54.png">
+                    <p>Progetto 3</p>
+                </a>
+                <a class="carousel-item" href="esempio.html"><img
+                        src="https://kinsta.com/wp-content/uploads/2021/11/Untitled-54.png">
+                    <p>Progetto 4</p>
+                </a>
+            </div>
+        </div>
+        <footer class="page-footer teal lighten-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text"><a href="mailto:Adelina99.baba@gmail.com">Adelina99.baba@gmail.com</a>
+                        </h5>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Social</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="https://github.com/LunaAde99"
+                                    target="_blank">Github</a></li>
+                            <li><a class="grey-text text-lighten-3"
+                                    href="https://www.linkedin.com/in/adelina-gabriela-baba-414483190/"
+                                    target="_blank">Linkedin</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/luna.ade/#"
+                                    target="_blank">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container">
+                    © 2024 Copyright
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
